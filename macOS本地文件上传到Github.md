@@ -93,3 +93,38 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 - 方法1（推荐2）:先将内容合并以下：**git pull --rebase origin master** 之后再执行，push就好了：**git push -u origin master**
 - 方法2（强制push 因为没有pull可能会导致远程仓库的某些文件丢失）: **git push -u leeinscky_leetcode master -f**
+
+
+
+# **完整过程实例**
+
+```shell
+zejianli@vs $ cd /Users/zejianli/OneDrive\ -\ bupt.edu.cn/【实习\ 工作】/【Guthub远程仓库】/Notes 
+zejianli@Notes $ git init 
+Initialized empty Git repository in /Users/zejianli/OneDrive - bupt.edu.cn/【实习 工作】/【Guthub远程仓库】/Notes/.git/
+zejianli@Notes $ git add .
+zejianli@Notes $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   macOS本地文件上传到Github.md
+
+zejianli@Notes $ git commit -m "first commit"
+[master (root-commit) f7541ef] first commit
+ 1 file changed, 95 insertions(+)
+ create mode 100755 macOS本地文件上传到Github.md
+zejianli@Notes $ git remote add Notes https://github.com/leeinscky/Notes
+zejianli@Notes $ git push -u Notes master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.54 KiB | 3.54 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/leeinscky/Notes
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'Notes'.
+```
