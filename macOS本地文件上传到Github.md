@@ -98,6 +98,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 # **完整过程实例**
 
+- 第一次上传：
 ```shell
 zejianli@vs $ cd /Users/zejianli/OneDrive\ -\ bupt.edu.cn/【实习\ 工作】/【Guthub远程仓库】/Notes 
 zejianli@Notes $ git init 
@@ -127,4 +128,25 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/leeinscky/Notes
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'Notes'.
+```
+
+- 第一次之后的上传：
+
+```
+zejianli@Notes $ git add .
+zejianli@Notes $ git commit -m "update"
+[master 4de2e54] update
+ 1 file changed, 113 insertions(+)
+ create mode 100755 macOS VScode 配置java 环境.md
+zejianli@Notes $ git push Notes master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.56 KiB | 2.56 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/leeinscky/Notes
+   df1ef9c..4de2e54  master -> master
+zejianli@Notes $ 
+
 ```
