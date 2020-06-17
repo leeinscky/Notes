@@ -111,3 +111,4 @@ zejianli@app $ code .
 
 # **总结**
 - 在VScode里面下载了一堆java插件发现还是Code Runner 最好用，可以直接运行各种语言的代码，方便快捷，可以直接对文件夹中的某一个java文件运行，不需要像eclipse一样创建项目导入包之类的。 链接：https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+- 想要运行java只需要enable以下插件：1. Code Runner 2. Java Extension 3. Language Support for Java  经过验证，发现enable 太多java 插件会导致java 代码 颜色 单一，去掉后各种语句类型颜色更丰富。
